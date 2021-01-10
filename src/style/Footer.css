@@ -1,0 +1,11 @@
+.footer{
+background-color: grey;
+left: 0;
+width: 100%;
+margin: 0;
+padding: 3px;
+font-family: cursive;
+position: fixed;
+bottom: 0;
+text-align: center;
+}

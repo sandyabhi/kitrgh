@@ -1,0 +1,25 @@
+.cardsMain{
+  margin-bottom: 40px;
+}
+
+  iframe{
+    height: 100VH;
+  }
+
+  .paperf {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+ .popt{
+   display: flex;
+   justify-content: center; 
+   padding:20px;
+  }
+
+  select{
+    font-size: 20px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

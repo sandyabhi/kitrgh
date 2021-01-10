@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(223, 223, 223);
+ 
+}
+
+.form{
+justify-content: center;
+display: flex;
+padding-bottom: 5px;
+}
+.form > input{
+    font-size: 20px;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form > button{
+  font-size: 20px;
+}
+
+.winfo{
+    margin-top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+.weather{
+    border-radius: 10px;
+    margin: 10px;
+    width: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid rgb(8, 8, 8);
+    padding: 20px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background-color: rgb(158, 166, 167);
+}
+
+.weathhead{
+    padding: 8px;
+    font-weight: 800;
+    font-size: 35px;
+    background-color: darkgrey;
+    text-align: center;
+}
+.mainweather{
+    justify-content: center;
+    align-items: center;
+     display: flex;
+}
+
+.Weath{
+ display: inline;
+ text-align: center;
+ justify-content: center;
+
+}
+
+.welement{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 13px ;
+    font-size: 25px;
+    display: flex;
+}
