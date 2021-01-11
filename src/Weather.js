@@ -3,23 +3,18 @@ import { useState } from 'react'
 import "./style/Weather.css"
 import axios from 'axios'
 
-
 function Weather() {
 
     const [weather, setWeather] = useState('');
     const [city, setCity] = useState('');
-    const [err, setErr] = useState('');
-    const apiKey = '8038140026a1b1109ca659c148a77f3d';
+    const apiKey = process.env.REACT_APP_APIKEY;
 
     const apiCall = async (e) => {
         e.preventDefault()
         const loc = e.target.elements.loc.value
-        if (!loc) return setErr("Error : Please enter city name"), setWeather(null)
-
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apiKey}`;
         const req = axios.get(url);
         const res = await req;
-        console.log(res.data)
         setWeather({
             descp: res.data.weather[0].description,
             temp: res.data.main.temp,
@@ -29,13 +24,12 @@ function Weather() {
         })
 
         setCity(res.data.name)
-        setErr(null)
+
     }
+
     //Converting K to C
     let k = weather.temp;
     let C = k - 273.15
-
-
 
     const Weath = () => {
         return <div>
@@ -69,7 +63,6 @@ function Weather() {
                 </form>
 
                 {weather && <Weath />}
-                <p>{err}</p>
             </div>
         </div>
     </>

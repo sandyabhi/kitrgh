@@ -1,8 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Home"
-// import Compiler from "./Compiler"
-// import Timetable from "./Timetable"
 import Paper from "./Paper"
 import Nav from "./Nav"
 import Header from './Header';
@@ -17,7 +15,6 @@ function App() {
       {<BrowserRouter>
         <Nav />
         <Switch>
-
           <Route exact path="/weather" component={Weather} />
           <Route exact path="/" component={Home} />
           <Route exact path="/paper" component={Paper} />

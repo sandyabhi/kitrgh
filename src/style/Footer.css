@@ -1,5 +1,6 @@
 .footer{
-background-color: grey;
+background-color: rgb(3, 0, 12);
+color: rgb(133, 133, 133);
 left: 0;
 width: 100%;
 margin: 0;
@@ -7,5 +8,11 @@ padding: 3px;
 font-family: cursive;
 position: fixed;
 bottom: 0;
+box-shadow: inset 1px 1px 15px rgb(32, 32, 32);
 text-align: center;
+}
+
+a{
+    color: rgb(10, 80, 209);
+    text-decoration: none;
 }

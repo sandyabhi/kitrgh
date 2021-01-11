@@ -1,25 +1,25 @@
 import React from 'react'
 import "./style/Paper.css"
-import { useState } from 'react';
+import { useState} from 'react';
 function Paper() {
 
-    const msrc = "";
-    const [cvalue, setCvalue] = useState()
+    const [cvalue, setCvalue] = useState('http://www.kitraigarh.com/questionpapers.aspx')
     const src2 = "http://www.kitraigarh.com/Scheme.aspx"
     const src1 = "http://www.kitraigarh.com/questionpapers.aspx"
-
+    const src3 = "http://www.kitraigarh.com/ebook.aspx"
 
 
     return (<>
         <div className="cardsMain">
             <div className="popt">
                 <select onChange={e => setCvalue(e.target.value)}>
-                    <option value="PYP">Previous Year Paper</option>
-                    <option value="SS">Syllabus/Scheme</option>
+                    <option value={src1}>Previous Year Paper</option>
+                    <option value={src2}>Syllabus/Scheme</option>
+                    <option value={src3}>Ebook</option>
                 </select>
             </div>
             <div className="paperf">
-                <iframe width="95%" frameborder="0" src={cvalue === "SS" ? src2 : src1} ></iframe>
+                <iframe title="paper" width="95%"  src={cvalue} ></iframe>
             </div>
         </div>
     </>

@@ -9,13 +9,26 @@ display: flex;
 padding-bottom: 5px;
 }
 .form > input{
-    font-size: 20px;
+    font-size: 17px;
     outline: none;
-    font-family:Arial, Helvetica, sans-serif;
+    size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family:unset;
 }
-.form > button{
-  font-size: 20px;
-}
+
+button {
+    transition-duration: 0.4s;
+    font-family:unset;
+    font-size: 17px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+button:hover {
+    background-color: #333333; 
+    color: white;
+  }
 
 .winfo{
     margin-top: 6px;
@@ -26,7 +39,7 @@ padding-bottom: 5px;
 .weather{
     border-radius: 10px;
     margin: 10px;
-    width: 60%;
+    width: 75%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 1px solid rgb(8, 8, 8);
     padding: 20px;
@@ -37,6 +50,7 @@ padding-bottom: 5px;
 .weathhead{
     padding: 8px;
     font-weight: 800;
+    box-shadow: inset 1px 1px 15px rgb(90, 88, 88);
     font-size: 35px;
     background-color: darkgrey;
     text-align: center;

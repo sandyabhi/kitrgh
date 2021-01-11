@@ -12,8 +12,6 @@ function Nav() {
         <div>
             <ul className="nav">
                 <li><NavLink className="NavLink" activeClassName="activeRoute" isActive={checkActive} to="/">Home</NavLink></li>
-                {/* <li><NavLink className="NavLink" activeClassName="activeRoute" to="/compiler">Compiler</NavLink></li>
-                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/timetable">Timetable</NavLink></li> */}
                 <li><NavLink className="NavLink" activeClassName="activeRoute" to="/paper">Paper</NavLink></li>
                 <li><NavLink className="NavLink" activeClassName="activeRoute" to="/weather">Weather</NavLink></li>
                 <li><NavLink className="NavLink" activeClassName="activeRoute" to="/about">About</NavLink></li>
